@@ -13,7 +13,6 @@ struct HomePage: View {
                 //ZStack{
                 MenuButton(options:["JLM"])
                 Spacer()
-//                    RandomConcentricRectangles(rectangleCount: 30, minCornerRadius:10, maxCornerRadius:10)
                     
                 //}
             }
