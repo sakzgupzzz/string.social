@@ -20,6 +20,7 @@
 		C917E6B82BBDE16E00E422FF /* Profiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917E6B72BBDE16E00E422FF /* Profiles.swift */; };
 		C917E6BA2BBDE36100E422FF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917E6B92BBDE36100E422FF /* Tools.swift */; };
 		C917E6BC2BBDF8D200E422FF /* SocietyMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917E6BB2BBDF8D200E422FF /* SocietyMenu.swift */; };
+		C97A3A022BBF8C7600C5CC32 /* SocietyMessagesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +53,11 @@
 		C917E6A22BBCA4E700E422FF /* string.socialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = string.socialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C917E6A62BBCA4E700E422FF /* string_socialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = string_socialUITests.swift; sourceTree = "<group>"; };
 		C917E6A82BBCA4E700E422FF /* string_socialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = string_socialUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C917E6B52BBCC35400E422FF /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		C917E6B52BBCC35400E422FF /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePage.swift; path = /Users/sakshamgupta/Documents/string.social/string.social/HomePage.swift; sourceTree = "<absolute>"; };
 		C917E6B72BBDE16E00E422FF /* Profiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profiles.swift; sourceTree = "<group>"; };
 		C917E6B92BBDE36100E422FF /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		C917E6BB2BBDF8D200E422FF /* SocietyMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMenu.swift; sourceTree = "<group>"; };
+		C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMessagesButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				C917E6B72BBDE16E00E422FF /* Profiles.swift */,
 				C917E6B92BBDE36100E422FF /* Tools.swift */,
 				C917E6BB2BBDF8D200E422FF /* SocietyMenu.swift */,
+				C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */,
 			);
 			path = string.social;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97A3A022BBF8C7600C5CC32 /* SocietyMessagesButton.swift in Sources */,
 				C917E6B62BBCC35400E422FF /* HomePage.swift in Sources */,
 				C917E6BC2BBDF8D200E422FF /* SocietyMenu.swift in Sources */,
 				C917E6902BBCA4E700E422FF /* Persistence.swift in Sources */,

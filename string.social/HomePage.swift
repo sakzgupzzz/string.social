@@ -13,6 +13,7 @@ struct HomePage: View {
                 //ZStack{
                 MenuButton(options:["JLM"])
                 Spacer()
+                SocietyMessagesButton()
                     
                 //}
             }
