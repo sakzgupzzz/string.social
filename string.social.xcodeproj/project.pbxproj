@@ -21,6 +21,10 @@
 		C917E6BA2BBDE36100E422FF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917E6B92BBDE36100E422FF /* Tools.swift */; };
 		C917E6BC2BBDF8D200E422FF /* SocietyMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917E6BB2BBDF8D200E422FF /* SocietyMenu.swift */; };
 		C97A3A022BBF8C7600C5CC32 /* SocietyMessagesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */; };
+		C97A3A042BBF967C00C5CC32 /* PrimaryContactsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A032BBF967C00C5CC32 /* PrimaryContactsButton.swift */; };
+		C97A3A062BBF984A00C5CC32 /* DirectMessageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */; };
+		C97A3A0A2BBFB56D00C5CC32 /* ContactsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */; };
+		C97A3A0C2BBFBCA200C5CC32 /* AddNewContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		C917E6B92BBDE36100E422FF /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		C917E6BB2BBDF8D200E422FF /* SocietyMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMenu.swift; sourceTree = "<group>"; };
 		C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMessagesButton.swift; sourceTree = "<group>"; };
+		C97A3A032BBF967C00C5CC32 /* PrimaryContactsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryContactsButton.swift; sourceTree = "<group>"; };
+		C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageButton.swift; sourceTree = "<group>"; };
+		C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPage.swift; sourceTree = "<group>"; };
+		C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 				C917E6B92BBDE36100E422FF /* Tools.swift */,
 				C917E6BB2BBDF8D200E422FF /* SocietyMenu.swift */,
 				C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */,
+				C97A3A032BBF967C00C5CC32 /* PrimaryContactsButton.swift */,
+				C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */,
+				C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */,
+				C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */,
 			);
 			path = string.social;
 			sourceTree = "<group>";
@@ -282,11 +294,15 @@
 				C917E6B62BBCC35400E422FF /* HomePage.swift in Sources */,
 				C917E6BC2BBDF8D200E422FF /* SocietyMenu.swift in Sources */,
 				C917E6902BBCA4E700E422FF /* Persistence.swift in Sources */,
+				C97A3A0C2BBFBCA200C5CC32 /* AddNewContactPage.swift in Sources */,
 				C917E6892BBCA4E300E422FF /* ContentView.swift in Sources */,
 				C917E6B82BBDE16E00E422FF /* Profiles.swift in Sources */,
 				C917E6BA2BBDE36100E422FF /* Tools.swift in Sources */,
+				C97A3A042BBF967C00C5CC32 /* PrimaryContactsButton.swift in Sources */,
 				C917E6872BBCA4E300E422FF /* string_socialApp.swift in Sources */,
+				C97A3A0A2BBFB56D00C5CC32 /* ContactsPage.swift in Sources */,
 				C917E6932BBCA4E700E422FF /* string_social.xcdatamodeld in Sources */,
+				C97A3A062BBF984A00C5CC32 /* DirectMessageButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ struct MenuButton: View {
                 ForEach(0..<options.count, id: \.self) { index in
                     Text(self.options[index]).tag(index)
                 }
-            }/*.position(x:75, y:50)*/
+            }
     }
 }
 

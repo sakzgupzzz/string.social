@@ -12,3 +12,24 @@ func middlePoint(geometry: GeometryProxy) -> CGPoint {
     let screenHeightMid = geometry.size.height/2
     return CGPoint(x: screenWidthMid, y: screenHeightMid)
 }
+
+
+struct SlideFromRightTransition: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .modifier(TransitionModifier())
+    }
+    
+    private struct TransitionModifier: ViewModifier {
+        @State private var isPresenting = false
+        
+        func body(content: Content) -> some View {
+            content
+                .offset(x: isPresenting ? 0 : UIScreen.main.bounds.width)
+                .animation(.easeInOut(duration: 0.5))
+                .onAppear {
+                    isPresenting = true
+                }
+        }
+    }
+}
