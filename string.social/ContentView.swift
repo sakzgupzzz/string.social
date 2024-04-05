@@ -15,9 +15,8 @@ struct ContentView: View {
     @State private var isLoggedIn: Bool = false
 
     var body: some View {
-            NavigationView {
                 if isLoggedIn {
-                    HomePage(friendImageNames: ["Shivam"]) // Show HomePage if logged in
+                    HomePage() // Show HomePage if logged in
                 } else {
                     VStack {
                         TextField("Username", text: $username)
@@ -48,7 +47,7 @@ struct ContentView: View {
                 }
             }
         }
-}
+
 
 #Preview {
     ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)

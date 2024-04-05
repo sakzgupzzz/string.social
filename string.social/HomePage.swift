@@ -3,7 +3,7 @@ import SwiftUI
 struct HomePage: View {
     @State private var centerPoint: CGPoint = .zero
     @State private var isMenuOpen = false
-    var friendImageNames: [String]
+    @State private var friendImageNames = ["Shivam", "Avnish", "Pruthi", "Shridhik", "Nikhil", "Alex", "Srinath", "Ayush", "Avnish", "Shivam", "Nikhil", "Nikhil"]
     
     @State private var isContactsPagePresented = false // State to track whether contacts page is presented
     
@@ -56,6 +56,6 @@ struct HomePage: View {
 
 struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        HomePage(friendImageNames: ["Shivam", "Avnish", "Pruthi", "Shridhik", "Nikhil", "Alex", "Srinath", "Ayush", "Avnish", "Shivam", "Nikhil", "Nikhil"])
+        HomePage()
     }
 }

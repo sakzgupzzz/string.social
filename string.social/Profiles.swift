@@ -16,7 +16,7 @@ struct RandomConcentricCirclesView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            ForEach(0..<circleCount) { _ in
+            ForEach(0..<circleCount, id: \.self) { _ in
                 let radius = CGFloat.random(in: self.minRadius...(min(geometry.size.width, geometry.size.height) / 2))
                 let offset = CGFloat.random(in: self.minOffset...self.maxOffset)
                 let circleSize = radius + offset

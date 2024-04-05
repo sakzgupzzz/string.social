@@ -37,7 +37,7 @@ struct ContactsPage: View {
                     // Action to add new contact
                     isAddNewContactPagePresented = true
                 }) {
-                    Text("Add New Contact")
+                    Text("Create New Connection")
                         .foregroundColor(.blue)
                 }
                 .sheet(isPresented: $isAddNewContactPagePresented) {
@@ -54,7 +54,7 @@ struct ContactsPage: View {
                 Spacer()
                 Text("ADD SOCIETY NAME HERE")
             }
-            ForEach(0..<contacts.count) { index in
+            ForEach(0..<contacts.count, id: \.self) { index in
                 ContactRow(contact: $contacts[index])
             }
             Spacer()
