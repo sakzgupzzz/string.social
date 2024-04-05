@@ -11,14 +11,12 @@ struct HomePage: View {
         NavigationView {
             VStack {
                 HStack{
-                    //ZStack{
+                    AddSocietyButton()
                     MenuButton(options:["JLM"])
                     Spacer()
                     SocietyMessagesButton()
-                        
-                    //}
                 }
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 20)
                 .padding(.top, 5)
                     
                 HStack {
@@ -46,7 +44,7 @@ struct HomePage: View {
                     
                     DirectMessageButton()
                 }
-                .padding(.horizontal, 40)
+                .padding(.horizontal, 30)
                 .padding(.bottom, 5)
                 .sheet(isPresented: $isContactsPagePresented) {
                     ContactsPage() // Present ContactsPage as a sheet

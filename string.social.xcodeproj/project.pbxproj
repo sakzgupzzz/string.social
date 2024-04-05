@@ -25,6 +25,7 @@
 		C97A3A062BBF984A00C5CC32 /* DirectMessageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */; };
 		C97A3A0A2BBFB56D00C5CC32 /* ContactsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */; };
 		C97A3A0C2BBFBCA200C5CC32 /* AddNewContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */; };
+		C97A3A0E2BBFC98B00C5CC32 /* AddSocietyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageButton.swift; sourceTree = "<group>"; };
 		C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPage.swift; sourceTree = "<group>"; };
 		C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactPage.swift; sourceTree = "<group>"; };
+		C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSocietyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */,
 				C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */,
 				C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */,
+				C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */,
 			);
 			path = string.social;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C917E6892BBCA4E300E422FF /* ContentView.swift in Sources */,
 				C917E6B82BBDE16E00E422FF /* Profiles.swift in Sources */,
 				C917E6BA2BBDE36100E422FF /* Tools.swift in Sources */,
+				C97A3A0E2BBFC98B00C5CC32 /* AddSocietyButton.swift in Sources */,
 				C97A3A042BBF967C00C5CC32 /* PrimaryContactsButton.swift in Sources */,
 				C917E6872BBCA4E300E422FF /* string_socialApp.swift in Sources */,
 				C97A3A0A2BBFB56D00C5CC32 /* ContactsPage.swift in Sources */,
