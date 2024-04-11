@@ -5,19 +5,45 @@ struct HomePage: View {
     @State private var isMenuOpen = false
     @State private var friendImageNames = ["Shivam", "Avnish", "Pruthi", "Shridhik", "Nikhil", "Alex", "Srinath", "Ayush", "Avnish", "Shivam", "Nikhil", "Nikhil"]
     
-    @State private var isContactsPagePresented = false // State to track whether contacts page is presented
+    @State private var isContactsPagePresented = false
+    @State private var isDirectMessagePagePresented = false
+    @State private var isAddSocietyPagePresented = false
+    @State private var isSocietyMessagesPresented = false
     
     var body: some View {
         NavigationView {
             VStack {
                 HStack{
-                    AddSocietyButton()
+                    Button(action: {
+                        self.isAddSocietyPagePresented = true
+                    })
+                    {
+                        AddSocietyButton {
+                            self.isAddSocietyPagePresented = true
+                        }
+                    }
+                    
                     MenuButton(options:["JLM"])
                     Spacer()
-                    SocietyMessagesButton()
+                    Button(action:{
+                        self.isSocietyMessagesPresented = true
+                    })
+                    {
+                        SocietyMessagesButton{
+                            self.isSocietyMessagesPresented = true
+                        }
+                    }
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 5)
+                .sheet(isPresented:
+                        $isAddSocietyPagePresented){
+                    AddSocietyPage()
+                }
+                        .sheet(isPresented:$isSocietyMessagesPresented){
+                            SocietyMessagesPage()
+                        }
+                
                     
                 HStack {
                     
@@ -41,14 +67,25 @@ struct HomePage: View {
                     }
                     Spacer()
                     
-                    
-                    DirectMessageButton()
+                    Button(action:{
+                        self.isDirectMessagePagePresented = true // Present DM page
+                    })
+                    {
+                        DirectMessageButton{
+                            self.isDirectMessagePagePresented = true
+                        }
+                    }
                 }
                 .padding(.horizontal, 30)
                 .padding(.bottom, 5)
-                .sheet(isPresented: $isContactsPagePresented) {
-                    ContactsPage() // Present ContactsPage as a sheet
+                .sheet(isPresented:
+                    $isDirectMessagePagePresented){
+                    DirectMessagePage()
                 }
+                .sheet(isPresented: $isContactsPagePresented) {
+                    ContactsPage()
+                }
+
             }
         }
     }

@@ -26,6 +26,10 @@
 		C97A3A0A2BBFB56D00C5CC32 /* ContactsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */; };
 		C97A3A0C2BBFBCA200C5CC32 /* AddNewContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */; };
 		C97A3A0E2BBFC98B00C5CC32 /* AddSocietyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */; };
+		C97A3A102BC07B3100C5CC32 /* DirectMessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A0F2BC07B3100C5CC32 /* DirectMessagesPage.swift */; };
+		C97A3A122BC7B92500C5CC32 /* AddSocietyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A112BC7B92500C5CC32 /* AddSocietyPage.swift */; };
+		C97A3A142BC7C12C00C5CC32 /* SocietyMessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A132BC7C12C00C5CC32 /* SocietyMessagesPage.swift */; };
+		C97A3A162BC7C1FE00C5CC32 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A152BC7C1FE00C5CC32 /* Objects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPage.swift; sourceTree = "<group>"; };
 		C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactPage.swift; sourceTree = "<group>"; };
 		C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSocietyButton.swift; sourceTree = "<group>"; };
+		C97A3A0F2BC07B3100C5CC32 /* DirectMessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesPage.swift; sourceTree = "<group>"; };
+		C97A3A112BC7B92500C5CC32 /* AddSocietyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSocietyPage.swift; sourceTree = "<group>"; };
+		C97A3A132BC7C12C00C5CC32 /* SocietyMessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMessagesPage.swift; sourceTree = "<group>"; };
+		C97A3A152BC7C1FE00C5CC32 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,10 @@
 				C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */,
 				C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */,
 				C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */,
+				C97A3A0F2BC07B3100C5CC32 /* DirectMessagesPage.swift */,
+				C97A3A112BC7B92500C5CC32 /* AddSocietyPage.swift */,
+				C97A3A132BC7C12C00C5CC32 /* SocietyMessagesPage.swift */,
+				C97A3A152BC7C1FE00C5CC32 /* Objects.swift */,
 			);
 			path = string.social;
 			sourceTree = "<group>";
@@ -293,10 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97A3A102BC07B3100C5CC32 /* DirectMessagesPage.swift in Sources */,
 				C97A3A022BBF8C7600C5CC32 /* SocietyMessagesButton.swift in Sources */,
 				C917E6B62BBCC35400E422FF /* HomePage.swift in Sources */,
 				C917E6BC2BBDF8D200E422FF /* SocietyMenu.swift in Sources */,
+				C97A3A162BC7C1FE00C5CC32 /* Objects.swift in Sources */,
 				C917E6902BBCA4E700E422FF /* Persistence.swift in Sources */,
+				C97A3A122BC7B92500C5CC32 /* AddSocietyPage.swift in Sources */,
 				C97A3A0C2BBFBCA200C5CC32 /* AddNewContactPage.swift in Sources */,
 				C917E6892BBCA4E300E422FF /* ContentView.swift in Sources */,
 				C917E6B82BBDE16E00E422FF /* Profiles.swift in Sources */,
@@ -307,6 +322,7 @@
 				C97A3A0A2BBFB56D00C5CC32 /* ContactsPage.swift in Sources */,
 				C917E6932BBCA4E700E422FF /* string_social.xcdatamodeld in Sources */,
 				C97A3A062BBF984A00C5CC32 /* DirectMessageButton.swift in Sources */,
+				C97A3A142BC7C12C00C5CC32 /* SocietyMessagesPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

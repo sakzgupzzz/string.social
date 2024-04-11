@@ -8,18 +8,21 @@ import SwiftUI
 import Foundation
 
 struct SocietyMessagesButton: View {
-    
+    let action: () -> Void
     let messageColors: [Color] = [.red, .green, .blue]
     
     var body: some View {
-        ZStack {
-            ForEach(0..<messageColors.count, id: \.self) { index in
-                Image(systemName: "message")
-                    .resizable()
-                    .foregroundColor(messageColors[index])
-                    .frame(width: 30, height: 30)
-                    .offset(y: CGFloat(index - 1) * 5) // Adjust offset based on index
-                    .padding()
+        Button(action:action){
+            ZStack {
+                ForEach(0..<messageColors.count, id: \.self) { index in
+                    Image(systemName: "message")
+                        .resizable()
+                        .foregroundColor(messageColors[index])
+                        .frame(width: 30, height: 30)
+                        .offset(y: CGFloat(index - 1) * 5) // Adjust offset based on index
+                        
+                }
+                .padding()
             }
         }
     }
