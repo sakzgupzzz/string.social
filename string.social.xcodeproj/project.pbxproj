@@ -30,6 +30,8 @@
 		C97A3A122BC7B92500C5CC32 /* AddSocietyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A112BC7B92500C5CC32 /* AddSocietyPage.swift */; };
 		C97A3A142BC7C12C00C5CC32 /* SocietyMessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A132BC7C12C00C5CC32 /* SocietyMessagesPage.swift */; };
 		C97A3A162BC7C1FE00C5CC32 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A152BC7C1FE00C5CC32 /* Objects.swift */; };
+		C97A3A192BC9665A00C5CC32 /* UserProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A182BC9665A00C5CC32 /* UserProfilePage.swift */; };
+		C97A3A1B2BC9668A00C5CC32 /* SocietyMemberProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A3A1A2BC9668A00C5CC32 /* SocietyMemberProfilePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		C97A3A112BC7B92500C5CC32 /* AddSocietyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSocietyPage.swift; sourceTree = "<group>"; };
 		C97A3A132BC7C12C00C5CC32 /* SocietyMessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMessagesPage.swift; sourceTree = "<group>"; };
 		C97A3A152BC7C1FE00C5CC32 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		C97A3A182BC9665A00C5CC32 /* UserProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePage.swift; sourceTree = "<group>"; };
+		C97A3A1A2BC9668A00C5CC32 /* SocietyMemberProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocietyMemberProfilePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		C917E6852BBCA4E300E422FF /* string.social */ = {
 			isa = PBXGroup;
 			children = (
+				C97A3A172BC7C8E100C5CC32 /* Buttons */,
 				C917E6862BBCA4E300E422FF /* string_socialApp.swift */,
 				C917E6882BBCA4E300E422FF /* ContentView.swift */,
 				C917E68A2BBCA4E700E422FF /* Assets.xcassets */,
@@ -139,13 +144,15 @@
 				C97A3A012BBF8C7500C5CC32 /* SocietyMessagesButton.swift */,
 				C97A3A032BBF967C00C5CC32 /* PrimaryContactsButton.swift */,
 				C97A3A052BBF984A00C5CC32 /* DirectMessageButton.swift */,
+				C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */,
 				C97A3A092BBFB56D00C5CC32 /* ContactsPage.swift */,
 				C97A3A0B2BBFBCA200C5CC32 /* AddNewContactPage.swift */,
-				C97A3A0D2BBFC98B00C5CC32 /* AddSocietyButton.swift */,
 				C97A3A0F2BC07B3100C5CC32 /* DirectMessagesPage.swift */,
 				C97A3A112BC7B92500C5CC32 /* AddSocietyPage.swift */,
 				C97A3A132BC7C12C00C5CC32 /* SocietyMessagesPage.swift */,
 				C97A3A152BC7C1FE00C5CC32 /* Objects.swift */,
+				C97A3A182BC9665A00C5CC32 /* UserProfilePage.swift */,
+				C97A3A1A2BC9668A00C5CC32 /* SocietyMemberProfilePage.swift */,
 			);
 			path = string.social;
 			sourceTree = "<group>";
@@ -173,6 +180,13 @@
 				C917E6A82BBCA4E700E422FF /* string_socialUITestsLaunchTests.swift */,
 			);
 			path = string.socialUITests;
+			sourceTree = "<group>";
+		};
+		C97A3A172BC7C8E100C5CC32 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +323,10 @@
 				C97A3A022BBF8C7600C5CC32 /* SocietyMessagesButton.swift in Sources */,
 				C917E6B62BBCC35400E422FF /* HomePage.swift in Sources */,
 				C917E6BC2BBDF8D200E422FF /* SocietyMenu.swift in Sources */,
+				C97A3A192BC9665A00C5CC32 /* UserProfilePage.swift in Sources */,
 				C97A3A162BC7C1FE00C5CC32 /* Objects.swift in Sources */,
 				C917E6902BBCA4E700E422FF /* Persistence.swift in Sources */,
+				C97A3A1B2BC9668A00C5CC32 /* SocietyMemberProfilePage.swift in Sources */,
 				C97A3A122BC7B92500C5CC32 /* AddSocietyPage.swift in Sources */,
 				C97A3A0C2BBFBCA200C5CC32 /* AddNewContactPage.swift in Sources */,
 				C917E6892BBCA4E300E422FF /* ContentView.swift in Sources */,

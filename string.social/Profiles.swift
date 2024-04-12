@@ -36,39 +36,62 @@ struct RandomConcentricCirclesView: View {
     }
 }
 
-struct UserProfilePicture: View {
+struct UserProfile: View {
     var imageName: String
     var position: CGPoint
+    @State private var isProfilePagePresented = false
+
     var body: some View {
         Image(imageName)
             .resizable()
             .scaledToFill()
             .clipShape(Circle())
             .frame(width: 150, height: 150)
-            .overlay(RandomConcentricCirclesView(circleCount: 30, minRadius: 70,maxRadius: 70,minOffset: 1, maxOffset: 10).frame(width: 180, height: 180))
+            .overlay(RandomConcentricCirclesView(circleCount: 30, minRadius: 70, maxRadius: 70, minOffset: 1, maxOffset: 10).frame(width: 180, height: 180))
             .position(position)
+            .onTapGesture {
+                isProfilePagePresented = true
+            }
+            .sheet(isPresented: $isProfilePagePresented) {
+                UserProfilePage(imageName: imageName)
+        }
     }
 }
 
 
-struct FriendProfilePicture: View {
-    @State private var offset = CGSize.zero
+
+
+struct SocietyMemberProfile: View {
+    @State private var isProfilePagePresented = false
     var imageName: String
     var position: CGPoint
-    init(imageName: String, position: CGPoint) {
+    var mutual: Bool
+    
+    init(imageName: String, position: CGPoint, mutual: Bool) {
         self.imageName = imageName
         self.position = position
+        self.mutual = mutual
     }
     
     var body: some View {
-        Image(imageName)
-            .resizable()
-            .scaledToFill()
-            .clipShape(Circle())
-            .frame(width: 50, height: 50) // Adjust size as needed
-            .overlay((RandomConcentricCirclesView(circleCount: 30,minRadius: 25,maxRadius: 25,minOffset: 1, maxOffset: 10)).frame(width: 90, height: 90))
-            .position(position)
-
+        ZStack{
+            if mutual {
+                MutualConnectionLine(position: position)
+            }
+            Image(imageName)
+                .resizable()
+                .scaledToFill()
+                .clipShape(Circle())
+                .frame(width: 50, height: 50) // Adjust size as needed
+                .overlay(RandomConcentricCirclesView(circleCount: 30, minRadius: 25, maxRadius: 25, minOffset: 1, maxOffset: 10).frame(width: 90, height: 90))
+                .position(position)
+                .onTapGesture {
+                    isProfilePagePresented = true
+                }
+                .sheet(isPresented: $isProfilePagePresented) {
+                    SocietyMemberProfilePage(imageName: imageName)
+                }
+        }
     }
 }
 
@@ -86,3 +109,46 @@ func initialPosition(index: Int, total: Int, geometry: GeometryProxy) -> CGPoint
     let y = midPoint.y + sin(angleRadians) * distanceFromMidpoint
     return CGPoint(x: x, y: y)
 }
+
+struct MutualConnectionLine: View {
+    var position: CGPoint
+    let lineCount = 20 // Number of line segments
+    
+    var body: some View {
+        GeometryReader { geometry in
+            let midPoint = middlePoint(geometry: geometry)
+            
+            if self.position.x == midPoint.x || self.position.y == midPoint.y {
+                // Draw kinks in the line
+                ForEach(0..<self.lineCount, id: \.self) { _ in
+                    let controlPoint1 = CGPoint(x: midPoint.x + CGFloat.random(in: -50...50), y: midPoint.y + CGFloat.random(in: -50...50))
+                    let controlPoint2 = CGPoint(x: midPoint.x + CGFloat.random(in: -50...50), y: midPoint.y + CGFloat.random(in: -50...50))
+                    let color1 = Color(red: Double.random(in: 0...1), green: Double.random(in: 0...1), blue: Double.random(in: 0...1))
+                    let color2 = Color(red: Double.random(in: 0...1), green: Double.random(in: 0...1), blue: Double.random(in: 0...1))
+                    
+                    Path { path in
+                        path.move(to: midPoint)
+                        path.addCurve(to: self.position, control1: controlPoint1, control2: controlPoint2)
+                    }
+                    .stroke(LinearGradient(gradient: Gradient(colors: [color1, color2]), startPoint: .leading, endPoint: .trailing), lineWidth: 2)
+                }
+            } else {
+                // Draw kinks in the line
+                ForEach(0..<self.lineCount, id: \.self) { _ in
+                    let controlPoint1 = CGPoint(x: midPoint.x + CGFloat.random(in: -50...50), y: midPoint.y + CGFloat.random(in: -50...50))
+                    let controlPoint2 = CGPoint(x: midPoint.x + CGFloat.random(in: -50...50), y: midPoint.y + CGFloat.random(in: -50...50))
+                    let color1 = Color(red: Double.random(in: 0...1), green: Double.random(in: 0...1), blue: Double.random(in: 0...1))
+                    let color2 = Color(red: Double.random(in: 0...1), green: Double.random(in: 0...1), blue: Double.random(in: 0...1))
+                    
+                    Path { path in
+                        path.move(to: midPoint)
+                        path.addCurve(to: self.position, control1: controlPoint1, control2: controlPoint2)
+                    }
+                    .stroke(LinearGradient(gradient: Gradient(colors: [color1, color2]), startPoint: .leading, endPoint: .trailing), lineWidth: 2)
+                }
+            }
+        }
+    }
+}
+
+
